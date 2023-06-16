@@ -6,6 +6,7 @@ const index = (_req, res) => {
       res.status(200).json(data);
     })
     .catch((err) => res.status(400).send(`Error retrieving products: ${err}`));
+  console.log("Displaying all products");
 };
 
 const findOne = (req, res) => {

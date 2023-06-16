@@ -12,10 +12,6 @@ exports.up = function (knex) {
     table.integer("eco_rating").notNullable();
     table.string("type").notNullable();
     table.string("category").notNullable();
-    table.integer("carbon_emissions_percentage").notNullable();
-    table.integer("recyclability_percentage").notNullable();
-    table.integer("energy_consumption_percentage").notNullable();
-    table.integer("sustainable_materials_percentage").notNullable();
     table.timestamp("created_at").defaultTo(knex.fn.now());
   });
 };

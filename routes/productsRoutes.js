@@ -1,7 +1,7 @@
-const { index, findOne } = require("../controllers/productController");
 const router = require("express").Router();
+const productController = require("../controllers/productController");
 
-router.post("/", index);
-router.post("/:id", findOne);
+router.route("/").get(productController.index);
+router.route("/:id").get(productController.findOne);
 
 module.exports = router;

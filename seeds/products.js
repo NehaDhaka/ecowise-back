@@ -15,10 +15,6 @@ exports.seed = async function (knex) {
       eco_rating: 95,
       type: "Black t-shirt",
       category: "Apparel",
-      carbon_emissions_percentage: 95,
-      recyclability_percentage: 99,
-      energy_consumption_percentage: 90,
-      sustainable_materials_percentage: 96,
     },
     {
       name: "Fruit of the Loom",
@@ -29,10 +25,6 @@ exports.seed = async function (knex) {
       eco_rating: 95,
       type: "Black t-shirt",
       category: "Apparel",
-      carbon_emissions_percentage: 95,
-      recyclability_percentage: 99,
-      energy_consumption_percentage: 90,
-      sustainable_materials_percentage: 96,
     },
   ]);
 };
